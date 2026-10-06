@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineMax | Filmes e Séries</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+
+        <div class="logo">
+            <span>🎬</span> CineMax
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#filmes">Filmes</a>
+            <a href="#series">Séries</a>
+            <a href="#populares">Populares</a>
+        </nav>
+
+        <div class="header-right">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar filmes e séries..."
+                >
+                <button onclick="searchMovies()">🔍</button>
+            </div>
+
+            <button class="profile">👤</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- BANNER PRINCIPAL -->
+    <main id="inicio">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="featured">🔥 EM DESTAQUE</span>
+
+                <h1>Stranger Things</h1>
+
+                <div class="info">
+                    <span>⭐ 9.2</span>
+                    <span>2026</span>
+                    <span>16+</span>
+                    <span>5 Temporadas</span>
+                </div>
+
+                <p>
+                    Em uma pequena cidade, acontecimentos sobrenaturais
+                    começam a revelar segredos que ninguém imaginava.
+                    Uma aventura cheia de mistério, amizade e suspense.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="playMovie()">
+                        ▶ Assistir agora
+                    </button>
+
+                    <button class="btn-secondary">
+                        + Minha lista
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POPULARES -->
+        <section class="section" id="populares">
+
+            <div class="section-title">
+                <h2>🔥 Mais populares</h2>
+                <a href="#">Ver todos →</a>
+            </div>
+
+            <div class="movies-grid">
+
+                <article class="movie-card" data-title="Stranger Things">
+                    <img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg">
+                    <div class="movie-info">
+                        <h3>Stranger Things</h3>
+                        <span>⭐ 9.2</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Breaking Bad">
+                    <img src="https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRN2.jpg">
+                    <div class="movie-info">
+                        <h3>Breaking Bad</h3>
+                        <span>⭐ 9.5</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="The Last of Us">
+                    <img src="https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg">
+                    <div class="movie-info">
+                        <h3>The Last of Us</h3>
+                        <span>⭐ 9.1</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Wednesday">
+                    <img src="https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg">
+                    <div class="movie-info">
+                        <h3>Wednesday</h3>
+                        <span>⭐ 8.8</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="The Boys">
+                    <img src="https://image.tmdb.org/t/p/w500/1Mxs7jL9V1h8mZQxKxF7y7dK7Q.jpg">
+                    <div class="movie-info">
+                        <h3>The Boys</h3>
+                        <span>⭐ 8.7</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FILMES -->
+        <section class="section" id="filmes">
+
+            <div class="section-title">
+                <h2>🎬 Filmes em alta</h2>
+                <a href="#">Ver todos →</a>
+            </div>
+
+            <div class="movies-grid">
+
+                <article class="movie-card" data-title="Duna">
+                    <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg">
+                    <div class="movie-info">
+                        <h3>Duna</h3>
+                        <span>⭐ 8.8</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Interestelar">
+                    <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg">
+                    <div class="movie-info">
+                        <h3>Interestelar</h3>
+                        <span>⭐ 9.3</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Oppenheimer">
+                    <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg">
+                    <div class="movie-info">
+                        <h3>Oppenheimer</h3>
+                        <span>⭐ 8.9</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Avatar">
+                    <img src="https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg">
+                    <div class="movie-info">
+                        <h3>Avatar</h3>
+                        <span>⭐ 8.6</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Vingadores">
+                    <img src="https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg">
+                    <div class="movie-info">
+                        <h3>Vingadores</h3>
+                        <span>⭐ 8.7</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SÉRIES -->
+        <section class="section" id="series">
+
+            <div class="section-title">
+                <h2>📺 Séries para assistir</h2>
+                <a href="#">Ver todos →</a>
+            </div>
+
+            <div class="movies-grid">
+
+                <article class="movie-card" data-title="Dark">
+                    <img src="https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg">
+                    <div class="movie-info">
+                        <h3>Dark</h3>
+                        <span>⭐ 9.0</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="The Witcher">
+                    <img src="https://image.tmdb.org/t/p/w500/cZ0d3rtvXPVvuiOss2Z8e1Vx6G7.jpg">
+                    <div class="movie-info">
+                        <h3>The Witcher</h3>
+                        <span>⭐ 8.4</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Peaky Blinders">
+                    <img src="https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg">
+                    <div class="movie-info">
+                        <h3>Peaky Blinders</h3>
+                        <span>⭐ 8.9</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="The Mandalorian">
+                    <img src="https://image.tmdb.org/t/p/w500/eU1i6eHXlz4sh8ZqZ2rW5W9Y7.jpg">
+                    <div class="movie-info">
+                        <h3>The Mandalorian</h3>
+                        <span>⭐ 8.7</span>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-title="Arcane">
+                    <img src="https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg">
+                    <div class="movie-info">
+                        <h3>Arcane</h3>
+                        <span>⭐ 9.0</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="footer-logo">
+            🎬 CineMax
+        </div>
+
+        <p>
+            Seu lugar para descobrir filmes e séries.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Termos de uso</a>
+            <a href="#">Privacidade</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 CineMax. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
